@@ -6,9 +6,11 @@ public class Main {
         try {
             int result = addArguments(args);
             System.out.println(result);
+	} catch (ArrayIndexOutOfBoundsException e) {
+	    System.err.println("Invalid number of arguments. Please provide at least two integers");
 	} catch (Exception e) {
 	    System.out.println(e);
-            System.err.println("Invalid argument: please provide a series of integers to add");
+            System.err.println("Invalid character: Please only provide integers");
         }
     }
 
