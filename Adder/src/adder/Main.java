@@ -6,9 +6,9 @@ public class Main {
         try {
             int result = addArguments(args);
             System.out.println(result);
-        } catch (Exception e) {
+	} catch (Exception e) {
 	    System.out.println(e);
-            System.err.println("Invalid input: please provide a series of integers to add");
+            System.err.println("Invalid argument: please provide a series of integers to add");
         }
     }
 
@@ -16,7 +16,7 @@ public class Main {
 	int myResult = 0;
 
 	if (args.length < 2) {
-		throw new IllegalArgumentException();
+		throw new ArrayIndexOutOfBoundsException();
 	}
 
 	for (int i = 0; i < args.length; i++) {
