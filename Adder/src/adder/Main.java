@@ -24,7 +24,7 @@ public class Main {
 	}
 
 	if (args.length < minArgs) {
-		throw new IllegalArgumentException();
+		throw new ArrayIndexOutOfBoundsException();
 	}
 
 	for (int i = startingIndex; i < args.length; i++) {
