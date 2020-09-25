@@ -3,10 +3,11 @@ b. .gitignore was added: Tue Jan 24 22:28:11 2017 -0600
 c. git log shows the complete list of commit logs while git status shows the
 	status of the current working tree, such as what files are staged/tracked
 	and the like.
-d. Ustaged files are files that will not be included in the next commit but are
+d. Unstaged files are files that will not be included in the next commit but are
 	still part of the repository. Untracked files are in the local directory
 	but are not part of git at all.
 e. git checkout moves only the head to a specified commit as well as updates the
 	local directory to the aforemeitned commit. git reset moves both the head
 	and master pointers to the specified commit, discarding any changes made.
-f. 
+f. the command will throw an error warning the user that pulling from the remote
+	will overwrite any local changes
